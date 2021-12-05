@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void RemoveDuplicates(char * arr) {
+    int len = strlen(arr);
+    
+    int read_stream = 0;
+    int write_stream = 0;
+    
+    unordered_set<char> stringSet;
+    while (read_stream < len) {
+        if (stringSet.find(arr[read_stream]) == stringSet.end()) {
+            stringSet.insert(arr[read_stream]);
+            arr[write_stream] = arr[read_stream];
+            write_stream++;
+        }
+        read_stream++;
+    }
+    arr[write_stream] = '\0';
+    cout << "Duplicates Removed - String is: " << arr;
+}
+
+int main() {
+    char ch[] = "BABCDBABC";
+    cout<<strlen(ch);
+    RemoveDuplicates(ch);
+}

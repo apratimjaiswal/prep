@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int fib(int n) {
+    int first=0, second=1;
+    if (n == 0) return;
+    unordered_map <int, int> map;
+    map[1] = 0;
+    map[2] = 1;
+    if (map[n] >= 0) {
+        return map[n];
+    } else {
+        return fib(n-1);
+    }
+}
+
+int main() {
+    int n;
+    cout << "Enter nth term: ";
+    cin >> n;
+    cout << "nth Fibonacci term is: " << fib(n);
+}

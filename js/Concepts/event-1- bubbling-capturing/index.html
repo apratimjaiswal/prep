@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        min-height: 100px;
+        min-width: 100px;
+        border: 1px solid black;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="middle">
+        <div id="inner"></div>
+      </div>
+    </div>
+
+    <input
+      id="text-box"
+      type="text"
+      placeholder="Random text box"
+      onkeyup="onChange()"
+    />
+    <button id="submit" onclick="onSubmit()">Submit</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event Methods</title>
+    <style>
+      #one {
+        width: 300px;
+        height: 300px;
+        background: orange;
+      }
+      #two {
+        width: 200px;
+        height: 200px;
+        background: lightblue;
+      }
+      #three {
+        width: 100px;
+        height: 100px;
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Methods</h1>
+    <p>stopPropagation Vs stopImmediatePropagation</p>
+    <div id="one">
+      1
+      <div id="two">
+        2
+        <div id="three">3</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

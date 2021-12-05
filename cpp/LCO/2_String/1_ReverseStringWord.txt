@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void ReverseString(string str) {
+    stringstream ss(str);
+    stack<int> buffer;
+    string word;
+    while(ss != eof()) {
+        cc>>word;
+        buffer.push(word);
+    }
+    string temp, result;
+    while(!buffer.empty()) {
+        temp = buffer.top();
+        result = result + temp;
+        if(!buffer.pop()) {
+            result = result + " ";
+        }
+    }
+}
+
+int main() {
+    string str = "Hello there";
+    ReverseString(str);
+    return 0;
+}

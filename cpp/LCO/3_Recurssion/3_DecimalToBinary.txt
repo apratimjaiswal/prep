@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+string convertToBinary(int n) {
+    string result;
+    int quotient = 1, remainder = 0;
+    if (n <= 1) return n;
+    quotient = n / 2;
+    result = convertToBinary(quotient);
+    // n % 2;
+    // result = n % 2;
+
+    return result;
+}
+
+int main() {
+    int n;
+    cout << "Enter number: " endl;
+    cin >> n;
+    cout << "Binary representation is: " << convertToBinary(n);
+}

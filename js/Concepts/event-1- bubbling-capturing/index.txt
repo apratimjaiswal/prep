@@ -1,0 +1,11 @@
+
+FIRST:
+Event Capturing (Trickling)
+CAPTURING_PHASE
+
+SECOND:
+Event Bubbling
+BUBBLING_PHASE
+
+According to W3C - Event Propogation happens TOP-DOWN the hierarchy.
+First EVENT CAPTURING happens and then EVENT BUBBLING happens.

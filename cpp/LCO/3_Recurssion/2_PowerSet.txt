@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void Subsets(string str, int len, int index, result) {
+    if (index == len) {
+        cout << result << endl;
+        break;
+    }
+    Subsets(str, len, index++, result + str[index]);
+    Subsets(str, len, index++, result);
+}
+
+int main() {
+    string str = "abc";
+    int index = 0;
+    string result = "";
+    Subsets(str, str.length(), index, result);
+}
